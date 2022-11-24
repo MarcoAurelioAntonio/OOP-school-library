@@ -14,8 +14,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Records books
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -39,7 +37,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/MarcoOquendoC/OOP-school-library.git
+  git clone https://github.com/MarcoAurelioAntonioC/OOP-school-library.git
 ```
 ### Install
 
