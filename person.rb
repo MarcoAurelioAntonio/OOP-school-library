@@ -9,6 +9,7 @@ class Person < Nameable
     @age = age
     @name = name
     @parent_permission = parent_permission
+    @rentals = []
   end
   # setters and getters
   attr_accessor :name, :age
@@ -23,6 +24,10 @@ class Person < Nameable
     @name
   end
 
+  def add_rental(book, date)
+    @rentals << Rental.new(date, book, self)
+  end
+
   # Private method
   private
 
@@ -31,7 +36,7 @@ class Person < Nameable
   end
 end
 
-person = Person.new(22, 'maximillian   ')
+person = Person.new(22, 'maximilian    ')
 p person.correct_name
 capitalized_person = CapitalizeDecorator.new(person)
 p capitalized_person.correct_name
