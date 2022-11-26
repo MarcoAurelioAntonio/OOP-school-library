@@ -15,6 +15,18 @@ class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
+  def self.all
+    ObjectSpace.each_object(self).to_a
+  end
+
+  def add_rental(book, date)
+    @rentals << Rental.new(date, book, self)
+  end
+
+  def add_full_rental(rental)
+    @rentals << rental
+  end
+
   # Public method
   def can_use_services?
     is_of_age? || @parent_permission
@@ -35,12 +47,3 @@ class Person < Nameable
     @age >= 18
   end
 end
-
-person = Person.new(22, 'maximilian    ')
-p person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-p capitalized_person.correct_name
-
-# if the word plus the spaces is grader of 10, makes the trimm
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-p capitalized_trimmed_person.correct_name

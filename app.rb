@@ -1,3 +1,9 @@
+require './book'
+require './person'
+require './student'
+require './teacher'
+require './rental'
+
 class App 
     def list_all_books
         Book.all.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
@@ -16,6 +22,35 @@ class App
         specialization = gets.chomp
         Teacher.new(age, specialization, name)
         puts 'Teacher created successfully'
+    end
+
+    def create_student
+        puts 'Name: '
+        name = gets.chomp
+        puts 'Age: '
+        age = gets.chomp
+        puts 'Has parent permission? [Y/N]: '
+        parent_permission = gets.chomp
+        parent_permission = parent_permission.downcase == 'y'
+        puts 'Classroom: '
+        classroom = gets.chomp
+        Student.new(age, classroom, name, parent_permission: parent_permission)
+        puts 'Student created successfully'
+    end
+
+    def create_person
+        print 'Do you want to load a student (1) or a teacher (2) data? [Input the require number]: '
+        option = gets.chomp
+    
+        case option
+        when '1'
+          create_student
+        when '2'
+          create_teacher
+        else
+          puts 'Is not a valid input'
+          nil
+        end
     end
 
     def create_book
