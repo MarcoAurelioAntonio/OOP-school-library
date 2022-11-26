@@ -44,13 +44,10 @@ class Main
       @app.send(selection[option])
       run
     when 7
-      puts '************************************'  
       puts '*** It was a pleasure! Bye Bye!! ***'
-      puts '************************************'
     else
-      puts '                                                                   | |'  
+      puts '                                                                   | |'
       puts 'That is not a valid option, USE YOUR FINGER WISELLY THIS TIME DUDE x x'
-      puts '------------------------------------------------------------------'
       run
     end
   end
