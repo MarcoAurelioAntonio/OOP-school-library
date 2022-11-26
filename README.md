@@ -1,6 +1,22 @@
+<a name="readme-top"></a>
+# 📗 Table of Contents
 
-# 📖 OOP-school-library <a name="morse-decoder"></a>
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
+# 📖 OOP-school-library <a name="about-project"></a>
 > A library tool to record what books are in the library and who borrows them.
 
 ![image](https://user-images.githubusercontent.com/99001924/204068447-00c12f37-34eb-49ac-a8bd-6841660286a5.png)
@@ -65,7 +81,7 @@ To run the project, execute the following commands:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Author <a name="authors"></a>
 
 ### 👤 Gustavo Porcilio
 
